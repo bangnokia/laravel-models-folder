@@ -1,0 +1,27 @@
+{
+    "name": "bangnokia/laravel-models-folder",
+    "description": "Move models to Models folder",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nguyen Viet",
+            "email": "bangnokia@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "laravel/framework": "5.8.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "BangNokia\\LaravelModelsFolder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BangNokia\\LaravelModelsFolder\\": "tests/"
+        }
+    }
+}
