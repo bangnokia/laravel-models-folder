@@ -21,17 +21,6 @@ class ModelsFolderServiceProvider extends ServiceProvider implements DeferrableP
         });
 
         $this->commands([ModelMakeCommand::class]);
-
-    }
-
-    /**
-     * Bootstraps any application services
-     *
-     * @return void
-     */
-    public function boot()
-    {
-
     }
 
     public function provides()

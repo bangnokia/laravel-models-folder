@@ -12,7 +12,8 @@
     "minimum-stability": "dev",
     "require": {},
     "require-dev": {
-        "laravel/framework": "5.8.x"
+        "laravel/framework": "5.8.x",
+        "orchestra/testbench": "^3.5"
     },
     "autoload": {
         "psr-4": {
