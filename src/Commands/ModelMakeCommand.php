@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BangNokia\LaravelModelsFolder\Commands;
 
 use Illuminate\Foundation\Console\ModelMakeCommand as BaseModelMakeCommand;
@@ -8,14 +7,14 @@ use Illuminate\Foundation\Console\ModelMakeCommand as BaseModelMakeCommand;
 class ModelMakeCommand extends BaseModelMakeCommand
 {
     /**
-     * The console command description
+     * The console command description.
      *
      * @var string
      */
     protected $description = 'Create a new Eloquent model class in Models folder';
 
     /**
-     * Execute console command
+     * Execute console command.
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
@@ -27,7 +26,7 @@ class ModelMakeCommand extends BaseModelMakeCommand
     }
 
     /**
-     * Create base model class
+     * Create base model class.
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
@@ -39,7 +38,7 @@ class ModelMakeCommand extends BaseModelMakeCommand
         if (!$this->files->exists($path)) {
             $this->files->put(
                 $path,
-                $this->files->get(__DIR__ . '/../../stubs/model.base.stub')
+                $this->files->get(__DIR__.'/../../stubs/model.base.stub')
             );
         }
     }
@@ -52,20 +51,21 @@ class ModelMakeCommand extends BaseModelMakeCommand
     public function getStub()
     {
         if ($this->option('pivot')) {
-            return __DIR__ . '/../../stubs/pivot.model.stub';
+            return __DIR__.'/../../stubs/pivot.model.stub';
         }
 
-        return __DIR__ . '/../../stubs/model.stub';
+        return __DIR__.'/../../stubs/model.stub';
     }
 
     /**
-     * Get the default namespace for the class
+     * Get the default namespace for the class.
      *
      * @param string $rootNamespace
+     *
      * @return string
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\Models';
+        return $rootNamespace.'\Models';
     }
 }

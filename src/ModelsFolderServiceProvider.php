@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
 class ModelsFolderServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     /**
-     * Register application services
+     * Register application services.
      *
      * @return void
      */
@@ -17,6 +17,7 @@ class ModelsFolderServiceProvider extends ServiceProvider implements DeferrableP
     {
         $this->app->singleton('command.model.make', function ($app) {
             $instance = new ModelMakeCommand($app['files']);
+
             return $instance;
         });
 

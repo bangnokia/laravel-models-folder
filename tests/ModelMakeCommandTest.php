@@ -4,7 +4,6 @@ namespace BangNokia\LaravelModelsFolder\Tests;
 
 use Artisan;
 use Orchestra\Testbench\TestCase;
-use Illuminate\Foundation\Console\Kernel;
 
 class ModelMakeCommandTest extends TestCase
 {
@@ -13,7 +12,7 @@ class ModelMakeCommandTest extends TestCase
     public function setUp() : void
     {
         parent::setUp();
-        exec('mkdir ' . __DIR__ . '/app');
+        exec('mkdir '.__DIR__.'/app');
     }
 
     public function getPackageProviders($app)
@@ -23,7 +22,7 @@ class ModelMakeCommandTest extends TestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        $app['path'] = __DIR__ .'/app';
+        $app['path'] = __DIR__.'/app';
     }
 
     /** @test */
@@ -39,6 +38,6 @@ class ModelMakeCommandTest extends TestCase
     public function tearDown() : void
     {
         parent::tearDown();
-        exec('rm -rf ' . __DIR__ .'/app');
+        exec('rm -rf '.__DIR__.'/app');
     }
 }
