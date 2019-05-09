@@ -5,4 +5,4 @@ php:
     - 7.2
 
 before-install:
-    - composer install --prefer-source --no--interaction
+    - composer install --no-interaction --prefer-source
