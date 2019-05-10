@@ -1,6 +1,6 @@
 {
     "name": "bangnokia/laravel-models-folder",
-    "description": "Move models to Models folder",
+    "description": "Create laravel models into Models folder by default",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -10,9 +10,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "illuminate/console": "^5.1"
+    },
     "require-dev": {
-        "laravel/framework": "5.8.x",
         "orchestra/testbench": "^3.5"
     },
     "autoload": {
