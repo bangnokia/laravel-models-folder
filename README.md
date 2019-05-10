@@ -1,4 +1,3 @@
-
 # Laravel Models folder
 
 [![Build Status](https://travis-ci.org/bangnokia/laravel-models-folder.svg?branch=master)](https://travis-ci.org/bangnokia/laravel-models-folder) [![StyleCI](https://github.styleci.io/repos/185553210/shield?branch=master)](https://github.styleci.io/repos/185553210)
