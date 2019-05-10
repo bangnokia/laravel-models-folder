@@ -30,8 +30,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bangnokia\\LaravelModelsFolder\\ModelsFolderServiceProvider"
+                "BangNokia\\LaravelModelsFolder\\ModelsFolderServiceProvider"
             ]
         }
-    }
+    },
 }
