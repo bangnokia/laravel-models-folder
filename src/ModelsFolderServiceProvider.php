@@ -3,10 +3,9 @@
 namespace BangNokia\LaravelModelsFolder;
 
 use BangNokia\LaravelModelsFolder\Commands\ModelMakeCommand;
-use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
-class ModelsFolderServiceProvider extends ServiceProvider implements DeferrableProvider
+class ModelsFolderServiceProvider extends ServiceProvider
 {
     /**
      * Register application services.
