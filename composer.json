@@ -3,7 +3,7 @@
     "description": "Create laravel models into Models folder by default",
     "type": "library",
     "license": "MIT",
-    "keywords": ["larave", "models folders"],
+    "keywords": ["laravel", "models folders"],
     "authors": [
         {
             "name": "Nguyen Viet",
