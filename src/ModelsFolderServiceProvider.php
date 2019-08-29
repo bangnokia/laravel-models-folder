@@ -16,9 +16,7 @@ class ModelsFolderServiceProvider extends ServiceProvider implements DeferrableP
     public function register()
     {
         $this->app->singleton('command.model.make', function ($app) {
-            $instance = new ModelMakeCommand($app['files']);
-
-            return $instance;
+            return new ModelMakeCommand($app['files']);
         });
 
         $this->commands([ModelMakeCommand::class]);
