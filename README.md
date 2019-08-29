@@ -12,7 +12,6 @@ All your models created by this command will be extends `App\Models\Model` inste
 In your Laravel project, run command `composer require bangnokia/laravel-models-folder --save`, or manual add to your `composer.json`
 ```
     "require": {
-        //
-        "bangnokia/laravel-models-folder": "dev-master"
+        "bangnokia/laravel-models-folder": "^1.0"
     }
 ```
