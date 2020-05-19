@@ -9,7 +9,7 @@ class ModelMakeCommandTest extends TestCase
 {
     protected $consoleOutput;
 
-    public function setUp() : void
+    public function setUp(): void
     {
         parent::setUp();
         exec('mkdir '.__DIR__.'/app');
@@ -35,7 +35,7 @@ class ModelMakeCommandTest extends TestCase
         $this->assertFileExists(__DIR__.'/app/Models/Model.php');
     }
 
-    public function tearDown() : void
+    public function tearDown(): void
     {
         parent::tearDown();
         exec('rm -rf '.__DIR__.'/app');
