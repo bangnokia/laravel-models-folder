@@ -12,7 +12,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "illuminate/console": "^5"
+        "illuminate/console": "^5.1|^6.0|^7.0"
     },
     "require-dev": {
         "orchestra/testbench": "^3.5"
